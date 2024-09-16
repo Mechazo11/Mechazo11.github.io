@@ -1,27 +1,24 @@
-# Minimal Mistakes remote theme starter
+[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
+[![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.7-blue.svg)](https://jekyllrb.com/)
+[![Ruby gem](https://img.shields.io/gem/v/minimal-mistakes-jekyll.svg)](https://rubygems.org/gems/minimal-mistakes-jekyll)
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
 
-Contains basic configuration to get you a site with:
+# Personal Website
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+This repository contains the source code and asset files for my website. It is based on the [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) theme by [Michael Rose](https://mademistakes.com/).
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+It is primarily geared towards sharing my projects, experiences and anything interesting that I can share with the world.
 
----
+# How to use?
 
-## Troubleshooting
+* Install dependencies: ```sudo apt install ruby-full build-essential zlib1g-dev```
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+* Fork this repository
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+**TODO**: What files needed to be changed? How to add pages, how to add content etc. etc.
+
+# Useful links
+
+* Markdown License Badges: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
+* Minimal Mistakes Quick-start guide: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+* Minimal mistakes configuration guide: https://mmistakes.github.io/minimal-mistakes/docs/configuration/
