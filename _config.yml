@@ -17,7 +17,7 @@ locale                   : "en-US"
 title                    : Azmyin Md. Kamal
 email                    : azmyin12@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My personal portfolio website based on Micheal Rose's Minimal Mistakes Jekyll Theme
+  My portfolio website based on Micheal Rose's Minimal Mistakes Jekyll Theme
 # twitter_username: username
 github_username          : Mechazo11
 minimal_mistakes_skin: "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
@@ -70,32 +70,35 @@ plugins:
 author:
   name   : "Azmyin Md. Kamal"
   avatar : "/assets/images/az_california.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Roboticist with a focus on Collaborative Visual SLAM, Simulation and Robot perception."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/"
+    - label: "Google Scholar"
+      icon: "ai fa-fw ai-google-scholar"
+      url: "https://scholar.google.com/citations?user=ghOa1ZkAAAAJ&hl=en"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/azmyinkamal/"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/"
+    - label: "Google Scholar"
+      icon: "ai fa-fw ai-google-scholar"
+      url: "https://scholar.google.com/citations?user=ghOa1ZkAAAAJ&hl=en"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/azmyinkamal/"
 
 defaults:
   # _posts
