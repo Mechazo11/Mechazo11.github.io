@@ -11,11 +11,14 @@ It is primarily geared towards sharing my projects, experiences and anything int
 
 # How to use?
 
-* Install dependencies: ```sudo apt install ruby-full build-essential zlib1g-dev```
+* Fork this repository.
 
-* Fork this repository
+**TODO** instructions
 
-**TODO**: What files needed to be changed? How to add pages, how to add content etc. etc.
+
+# Acknowledgement:
+
+Website's layout is heavily inspired by Manthan Patel's [portfolio-website](https://manthan99.github.io/)
 
 # Useful links
 
