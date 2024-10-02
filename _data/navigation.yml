@@ -1,9 +1,21 @@
+# main:
+#   - title: "Posts"
+#     url: /posts/
+#   - title: "Categories"
+#     url: /categories/
+#   - title: "Tags"
+#     url: /tags/
+#   - title: "About"
+#     url: /about/
+# main links
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
   - title: "About"
-    url: /about/
+    url: "#about"
+  - title: "Publications & Patents"
+    url: "#publications"
+  - title: "Projects"
+    url: "#projects"
+  - title: "Awards"
+    url: "#awards"
+  - title: "CV"
+    url: "assets/files/resume_aug2024.pdf"
