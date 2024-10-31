@@ -53,7 +53,8 @@ layout: null
           <div class="content has-text-justified">
             {{ site.description | markdownify }}
             <div class="buttons">
-              <a class="external-link button is-light" href="cv.html">
+              <!-- Opens a .pdf file -->
+              <a class="external-link button is-light" href="/assets/cv.pdf" target="_blank">
                 <span class="icon"><i class="fas fa-file"></i></span>
                 <span>CV</span>
               </a>
@@ -69,10 +70,10 @@ layout: null
                 <span>Github</span>
               </a>
 
-              <a class="external-link button is-light" href="https://twitter.com/{{ site.twitter_username }}">
+              <!-- <a class="external-link button is-light" href="https://twitter.com/{{ site.twitter_username }}">
                 <span class="icon"><i class="fab fa-twitter"></i></span>
                 <span>Twitter</span>
-              </a>
+              </a> -->
             </div>
 
           </div>
@@ -101,6 +102,44 @@ layout: null
           {% endfor %}
         </ul>
       </div>-->
+      
+      
+      <h2 class="title is-3">Projects</h2>
+      {% for project in site.data.projects %}
+      <div class="project-block columns">
+        
+        <div class="column is-2">
+          <div class="project-image {% if project.image_mouseover %}project-mousecell{% endif %}">
+            {% if project.image_mouseover contains "mp4" %}
+            <video autoplay preload playsinline class="" height="100%" loop muted width="100%">
+              <source src="./images/{{ project.image_mouseover }}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            {% endif %}
+            <img alt="{{ project.title }}" src="./images/{{ project.image }}" />
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="content">
+            <h3 class="project-title"><a href="{{ project.project_page }}">{{ project.title }}</a></h3>
+            <p class="project-description">{{ project.description }}</p>
+            <div class="project-links buttons field has-addons">
+              <a class="external-link button is-small is-ghost" href="{{ project.project_page }}">
+                <span class="icon"><i class="fas fa-globe-asia"></i></span>
+                <span>Project Page</span>
+              </a>
+              {% if project.github %}
+              <a class="external-link button is-small is-ghost" href="https://github.com/{{ project.github }}">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>Code</span>
+              </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
 
       <h2 class="title is-3">Publications</h2>
 

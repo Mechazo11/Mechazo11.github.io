@@ -1,0 +1,6 @@
+- title: Project 1
+  description: Description of project 1.
+  project_page: https://example.com/project1
+  github: username/repo
+  image: camp_before.jpg
+  image_mouseover: camp_after.mp4
