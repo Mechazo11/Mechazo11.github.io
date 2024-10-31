@@ -1,4 +1,6 @@
-# keunhong.github.io
+# mechazo11.github.io
+
+This portfolio webpage is based on Dr. Keunhong Park's [portoflio website](https://github.com/keunhong/keunhong.github.io).
 
 - Feel free to borrow this template.
 - Make sure to update all relevant fields in `_config.yml` and `_data`.
