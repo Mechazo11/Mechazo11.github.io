@@ -10,3 +10,15 @@
   image_mouseover: "illuminerf_after.mp4"
   project_page: "/projects/project-one"
   github: "username/repo-one"
+
+# - title: "Project Title"
+#   authors:
+#     - author1
+#     - author2
+#   venue: "Project Venue or Description"
+#   description: "Brief description of the project."
+#   image: "project_image.jpg"
+#   image_mouseover: "project_image_hover.mp4" # Optional for mouseover effect
+#   project_page: "https://projectwebsite.com"
+#   github: "username/project-repo" # Optional
+#   # Add other fields as needed
