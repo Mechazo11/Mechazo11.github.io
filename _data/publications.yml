@@ -1,13 +1,29 @@
-- id: illuminerf
-  title: "IllumiNeRF 3D Relighting without Inverse Rendering"
-  venue: NeurIPS, 2024
-  description: "3D relighting by distilling samples from a 2D image relighting diffusion model into a latent-variable NeRF."
-  project_page: https://illuminerf.github.io
-  arxiv: 2406.06527
-  image: illuminerf_before.jpg
-  image_mouseover: illuminerf_after.mp4
+# - id: illuminerf
+#   title: "IllumiNeRF 3D Relighting without Inverse Rendering"
+#   venue: NeurIPS, 2024
+#   description: "3D relighting by distilling samples from a 2D image relighting diffusion model into a latent-variable NeRF."
+#   project_page: https://illuminerf.github.io
+#   arxiv: 2406.06527
+#   image: illuminerf_before.jpg
+#   image_mouseover: illuminerf_after.mp4
+#   authors:
+#     - azmyin
+#     - dr_corina
+#   awards:
+#     - "Journal Paper"
+
+- id: thesis_chapter_1
+  title: "Solving Short-Term Relocalization Problems In Monocular Keyframe Visual SLAM Using Spatial And Semantic Data"
+  venue: IEEE/ASME AIM, Boston, 2024
+  description: "A novel platform agnostic relocalization method for VSLAM frameworks that utilizes object semantics and camera pose data to rapdily recover global pose in real-time from tracking loss in GPS-denied cluttured enviornment."
+  github: https://github.com/RKinDLab/ros2_psd_pcb_reloc
+  arxiv: 2407.19518
+  image: reloc2024_before.png
+  image_mouseover: reloc2024_after.mp4
   authors:
     - azmyin
+    - dadson
+    - donovan
     - dr_corina
   awards:
-    - "Journal Paper"
+    - "Conference Paper"

@@ -24,6 +24,6 @@ bundle exec jekyll serve
 * [x] Remove all Dr. Park's assessts from front page
 * [x] Modify cv button to open up the pdf instead of a html page.
 * [x] Create a section for projects
-* [ ] Fix transition between still image and animation for `Projects` section
-* [ ] Add journal and conference papers in reverse chronological order
+* [x] Fix transition between still image and animation for `Projects` section
 * [ ] Complete the two - three liner short intro
+* [ ] Add journal and conference papers in reverse chronological order
