@@ -1,6 +1,12 @@
-- title: Project 1
-  description: Description of project 1.
-  project_page: https://example.com/project1
-  github: username/repo
-  image: camp_before.jpg
-  image_mouseover: camp_after.mp4
+# - title: Project 1
+#   description: Description of project 1.
+#   github: username/repo
+#   image: illuminerf_before.jpg
+#   image_mouseover: illuminerf_after.mp4
+
+- title: "Project One"
+  description: "A short description of Project One."
+  image: "illuminerf_before.jpg"
+  image_mouseover: "illuminerf_after.mp4"
+  project_page: "/projects/project-one"
+  github: "username/repo-one"

@@ -7,63 +7,7 @@
   image: illuminerf_before.jpg
   image_mouseover: illuminerf_after.mp4
   authors:
-    - xiaomingzhao
-    - pratuls
-    - dorverbin
-    - keunhong
-    - rmbrualla
-    - phenzler
-
-# - id: reconfusion
-#   title: "ReconFusion: 3D Reconstruction with Diffusion Priors"
-#   venue: CVPR, 2024
-#   description: "Using an multi-view image conditioned diffusion model to regularize a NeRF enabled few-view reconstruction."
-#   project_page: https://reconfusion.github.io
-#   arxiv: 2312.02981
-#   image: reconfusion_before.png
-#   image_mouseover: reconfusion_after.mp4
-#   authors:
-#     - rundiwu
-#     - bmild
-#     - phenzler
-#     - keunhong
-#     - ruiqigao
-#     - danielwatson
-#     - pratuls
-#     - dorverbin
-#     - barron
-#     - pooleb
-#     - holynski
-# - id: hypernerf
-#   title: "CamP: Camera Preconditioning for Neural Radiance Fields"
-#   venue: SIGGRAPH Asia, 2023
-#   description: "Preconditioning camera optimization during NeRF training significantly improves their ability to jointly recover the scene and camera parameters."
-#   project_page: "https://camp-nerf.github.io"
-#   github: jonbarron/camp_zipnerf
-#   arxiv: 2308.10902
-#   image: camp_before.jpg
-#   image_mouseover: camp_after.mp4
-#   authors:
-#     - keunhong
-#     - phenzler
-#     - bmild
-#     - barron
-#     - rmbrualla
-#   awards:
-#     - "Journal Paper"
-
-# - id: photoshape
-#   title: "PhotoShape: Photorealistic Materials for Large-Scale Shape Collections"
-#   venue: SIGGRAPH Asia, 2018
-#   description: "By pairing large collections of images, 3D models, and materials, you can create thousands of photorealistic 3D models fully automatically."
-#   project_page: "https://photoshape.github.io"
-#   github: keunhong/photoshape
-#   arxiv: 1809.09761
-#   image: photoshape.jpg
-#   authors:
-#     - keunhong
-#     - krematas
-#     - ali
-#     - smseitz
-#   awards:
-#     - "Journal Cover"
+    - azmyin
+    - dr_corina
+  awards:
+    - "Journal Paper"
