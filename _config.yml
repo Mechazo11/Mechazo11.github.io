@@ -23,10 +23,13 @@ name: Azmyin Md. Kamal
 position: Graduate Research Assistant 
 email: azmyin12@gmail.com
 description: >-
-  TODO
-  
-  I received my masters from the [University of Louisiana at Lafayette](https://grail.cs.washington.edu/) in 2021 where I was advised by
-  [Raju Gottumukkala](https://mechanical.louisiana.edu/node/165) where TODO masters topic and patent
+  I am a robotics engineer currently working through a Ph.D. in Mechanical Engineering at the [iCORE](https://www.youtube.com/watch?v=OpRA_1kvCQE) Lab under the supervision of Dr. [Corina Barbalata](https://www.lsu.edu/eng/mie/people/faculty/barbalata.php) in 
+  the Louisiana State University. My reserach focuses on developing novel sparse-metric-semantic Visual SLAM frameworks for collaborative robots working in GPS-deined cluttured indoor environments.
+  Before joining LSU, I completed my master's degree at the [University of Louisiana at Lafayette](https://grail.cs.washington.edu/) in 2021 where I was advised by
+  Dr. [Raju Gottumukkala](https://mechanical.louisiana.edu/node/165). There, I developed an innovative multi-user indoor positioning system using computer vision and deep learning which has recently been submitted for a [patent](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ghOa1ZkAAAAJ&citation_for_view=ghOa1ZkAAAAJ:LkGwnXOMwfcC).
+  My researh interests lies in Visual SLAM, navigation and predictive control. Through various funded projects, I have had the opportunity to work with industrial-grade mobile manipulators, UGVs and Mars rover in simulated enviornments, a diverse range of RGB-D sensors, object detection, 6D Pose Estimation, and VSLAM frameworks.
+  Alongsde my core reserach,  I developed strong hands-on skill in Optimization, Neural network design with PyTorch, Git, ROS (1 and 2), CI/CD with Docker, and physics-based
+  simulation using (Gazebo and O3DE). I am actively engaged with the open-source community having contributed in multiple influential projects.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mechazo11.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: _

@@ -1,17 +1,3 @@
-# - id: illuminerf
-#   title: "IllumiNeRF 3D Relighting without Inverse Rendering"
-#   venue: NeurIPS, 2024
-#   description: "3D relighting by distilling samples from a 2D image relighting diffusion model into a latent-variable NeRF."
-#   project_page: https://illuminerf.github.io
-#   arxiv: 2406.06527
-#   image: illuminerf_before.jpg
-#   image_mouseover: illuminerf_after.mp4
-#   authors:
-#     - azmyin
-#     - dr_corina
-#   awards:
-#     - "Journal Paper"
-
 - id: thesis_chapter_1
   title: "Solving Short-Term Relocalization Problems In Monocular Keyframe Visual SLAM Using Spatial And Semantic Data"
   venue: IEEE/ASME AIM, Boston, 2024
@@ -27,3 +13,22 @@
     - dr_corina
   awards:
     - "Conference Paper"
+
+- id: nature_paper
+  title: "Association mining based approach to analyze COVID‑19 response and case growth in the United States."
+  venue: Nature, Scientific Reports, 2021
+  description: "A data mining approach using association rule mining and logistic growth modeling to analyze the effectiveness of non-pharmaceutical interventions, revealing that face mask mandates and moderate stay-at-home orders were most effective in reducing COVID-19 cases across U.S. states."
+  github: https://github.com/raviteja-bhupatiraju/Covid19-Phasewise-Mobility-Association
+  url: https://www.nature.com/articles/s41598-021-96912-5
+  image: association_mining_2021.png
+  authors:
+    - satya
+    - dr_raju
+    - ravi
+    - azmyin
+    - vijay
+    - henry_chu
+    - ramesh
+    - ziad
+  awards:
+    - "Journal Paper"
