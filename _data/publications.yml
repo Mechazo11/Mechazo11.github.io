@@ -5,6 +5,7 @@
     The disclosed multimodal indoor positioning system combines Bluetooth Low Energy (BLE) beacons, 
     smartphones, cameras, and edge devices. Smartphones generate location estimates from BLE signals, while cameras provide 2D video frames.
     Edge devices integrate this data, assigning anonymous tracklet IDs to smartphones for precise indoor tracking.
+  project_page: 
   github: 
   url: https://patents.google.com/patent/US20240292188A1/en
   image: msc_thesis_2021.jpg
@@ -19,6 +20,7 @@
   title: "Solving Short-Term Relocalization Problems In Monocular Keyframe Visual SLAM Using Spatial And Semantic Data"
   venue: IEEE/ASME AIM, Boston, 2024
   description: "A novel platform agnostic relocalization method for VSLAM frameworks that utilizes object semantics and camera pose data to rapdily recover global pose in real-time from tracking loss in GPS-denied cluttured enviornment."
+  project_page:
   github: https://github.com/RKinDLab/ros2_psd_pcb_reloc
   arxiv: 2407.19518
   image: reloc2024_before.png
@@ -35,6 +37,7 @@
   title: "Association mining based approach to analyze COVID‑19 response and case growth in the United States."
   venue: Nature, Scientific Reports, 2021
   description: "A data mining approach using association rule mining and logistic growth modeling to analyze the effectiveness of non-pharmaceutical interventions, revealing that face mask mandates and moderate stay-at-home orders were most effective in reducing COVID-19 cases across U.S. states."
+  project_page:
   github: https://github.com/raviteja-bhupatiraju/Covid19-Phasewise-Mobility-Association
   url: https://www.nature.com/articles/s41598-021-96912-5
   image: association_mining_2021.png
@@ -56,6 +59,7 @@
   description: >- 
     This study analyzes the phase-wise, non-linear relationship between human mobility 
     and COVID-19 case growth post-lockdown, finding limited predictive value overall but identifying specific strong associations during certain epidemic phases. Mobility's impact on case growth diminishes in later stages of the outbreak.
+  project_page:
   github: https://github.com/raviteja-bhupatiraju/Covid19-Phasewise-Mobility-Association
   url: https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-021-11657-0
   image: bmc_2021.jpg
@@ -70,4 +74,41 @@
     - ziad
   awards:
     - "Journal Paper"
+
+- id: icasert_2019
+  title: "Comparison of Linear Displacement Measurements Between A Mems Accelerometer and HC‑SR04 Low‑Cost Ultrasonic Sensor"
+  venue: IEEE ICASERT, Dhaka, 2019
+  description: >- 
+    This study evaluates the accuracy of displacement measurements from a low-cost IMU (MPU6050) compared to an ultrasonic sensor (HC-SR04) for robot localization source locally in Bangladesh. 
+    Results show IMU-based displacement estimation is reasonably accurate but limited by assumptions not representative of real-world conditions.
+  url: https://ieeexplore.ieee.org/document/8934569
+  github: 
+  arxiv: 
+  image: icasert_2019.jpg
+  image_mouseover:
+  authors:
+    - azmyin
+    - salman
+    - mohsan
+  awards:
+    - "Conference Paper"
+
+
+# ----- Template
+# - id: name_year
+#   title: "Name"
+#   venue: name, area, year
+#   description: >- 
+#     line 1
+#     line 2
+#   url:
+#   github: todo
+#   arxiv: todo
+#   image: todo
+#   image_mouseover: todo
+#   authors:
+#     - azmyin
+#     - others
+#   awards:
+#     - "Name"
 
