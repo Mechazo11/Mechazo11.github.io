@@ -1,4 +1,21 @@
-- id: thesis_chapter_1
+- id: patent_2024
+  title: "Multimodal Indoor Positioning Systems and Methods for Privacy Localization."
+  venue: University of Louisiana at Lafayette, 2024
+  description: >- 
+    The disclosed multimodal indoor positioning system combines Bluetooth Low Energy (BLE) beacons, 
+    smartphones, cameras, and edge devices. Smartphones generate location estimates from BLE signals, while cameras provide 2D video frames.
+    Edge devices integrate this data, assigning anonymous tracklet IDs to smartphones for precise indoor tracking.
+  github: 
+  url: https://patents.google.com/patent/US20240292188A1/en
+  image: msc_thesis_2021.jpg
+  authors:
+    - dr_raju
+    - azmyin
+    - seyedmajidi
+  awards:
+    - "U.S. Patent Application"
+
+- id: aim_paper_2024
   title: "Solving Short-Term Relocalization Problems In Monocular Keyframe Visual SLAM Using Spatial And Semantic Data"
   venue: IEEE/ASME AIM, Boston, 2024
   description: "A novel platform agnostic relocalization method for VSLAM frameworks that utilizes object semantics and camera pose data to rapdily recover global pose in real-time from tracking loss in GPS-denied cluttured enviornment."
@@ -14,7 +31,7 @@
   awards:
     - "Conference Paper"
 
-- id: nature_paper
+- id: nature_paper_2021
   title: "Association mining based approach to analyze COVID‑19 response and case growth in the United States."
   venue: Nature, Scientific Reports, 2021
   description: "A data mining approach using association rule mining and logistic growth modeling to analyze the effectiveness of non-pharmaceutical interventions, revealing that face mask mandates and moderate stay-at-home orders were most effective in reducing COVID-19 cases across U.S. states."
@@ -32,3 +49,25 @@
     - ziad
   awards:
     - "Journal Paper"
+
+- id: bmc_paper_2021
+  title: "Exploring the relationship between mobility and COVID− 19 infection rates for the second peak in the United States using phase-wise association."
+  venue: BMC Public Health, 2021
+  description: >- 
+    This study analyzes the phase-wise, non-linear relationship between human mobility 
+    and COVID-19 case growth post-lockdown, finding limited predictive value overall but identifying specific strong associations during certain epidemic phases. Mobility's impact on case growth diminishes in later stages of the outbreak.
+  github: https://github.com/raviteja-bhupatiraju/Covid19-Phasewise-Mobility-Association
+  url: https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-021-11657-0
+  image: bmc_2021.jpg
+  authors:
+    - dr_raju
+    - satya
+    - ravi
+    - azmyin
+    - vijay
+    - henry_chu
+    - ramesh
+    - ziad
+  awards:
+    - "Journal Paper"
+
