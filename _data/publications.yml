@@ -14,7 +14,7 @@
     - azmyin
     - seyedmajidi
   awards:
-    - "U.S. Patent Application"
+    - "Computer Vision/AI, U.S. Patent Application"
 
 - id: aim_paper_2024
   title: "Solving Short-Term Relocalization Problems In Monocular Keyframe Visual SLAM Using Spatial And Semantic Data"
@@ -31,7 +31,7 @@
     - donovan
     - dr_corina
   awards:
-    - "Conference Paper"
+    - "Visual SLAM/Object Detection, Conference Paper"
 
 - id: nature_paper_2021
   title: "Association mining based approach to analyze COVID‑19 response and case growth in the United States."
