@@ -25,5 +25,8 @@ bundle exec jekyll serve
 * [x] Modify cv button to open up the pdf instead of a html page.
 * [x] Create a section for projects
 * [x] Fix transition between still image and animation for `Projects` section
-* [ ] Complete the two - three liner short intro
-* [ ] Add journal and conference papers in reverse chronological order
+* [x] Complete the two - three liner short intro
+* [ ] Increase size of the image and mouse-over-image
+* [x] Add journal and conference papers in reverse chronological order
+* [ ] Add projects
+* [ ] Set the project live

@@ -14,14 +14,18 @@
     - azmyin
     - seyedmajidi
   awards:
-    - "Computer Vision/AI, U.S. Patent Application"
+    - "Computer Vision|Object Detection|Object Tracking | U.S. Patent Application"
 
 - id: aim_paper_2024
   title: "Solving Short-Term Relocalization Problems In Monocular Keyframe Visual SLAM Using Spatial And Semantic Data"
   venue: IEEE/ASME AIM, Boston, 2024
-  description: "A novel platform agnostic relocalization method for VSLAM frameworks that utilizes object semantics and camera pose data to rapdily recover global pose in real-time from tracking loss in GPS-denied cluttured enviornment."
+  description: >- 
+    A novel platform agnostic relocalization method for 
+    VSLAM frameworks that utilizes object semantics and 
+    camera pose data to rapdily recover global pose in real-time from tracking loss in GPS-denied cluttured enviornment.
+    Visit the github repo for more details.
   project_page:
-  github: https://github.com/RKinDLab/ros2_psd_pcb_reloc
+  github: RKinDLab/ros2_psd_pcb_reloc
   arxiv: 2407.19518
   image: reloc2024_before.png
   image_mouseover: reloc2024_after.mp4
@@ -31,14 +35,14 @@
     - donovan
     - dr_corina
   awards:
-    - "Visual SLAM/Object Detection, Conference Paper"
+    - "Robotics|Visual SLAM|Object Detection ** |C++|Python|Pytorch|ROS2 ** Conference Paper"
 
 - id: nature_paper_2021
   title: "Association mining based approach to analyze COVID‑19 response and case growth in the United States."
   venue: Nature, Scientific Reports, 2021
   description: "A data mining approach using association rule mining and logistic growth modeling to analyze the effectiveness of non-pharmaceutical interventions, revealing that face mask mandates and moderate stay-at-home orders were most effective in reducing COVID-19 cases across U.S. states."
   project_page:
-  github: https://github.com/raviteja-bhupatiraju/Covid19-Phasewise-Mobility-Association
+  github: raviteja-bhupatiraju/Covid19-Phasewise-Mobility-Association
   url: https://www.nature.com/articles/s41598-021-96912-5
   image: association_mining_2021.png
   authors:
@@ -51,7 +55,7 @@
     - ramesh
     - ziad
   awards:
-    - "Journal Paper"
+    - "Statistics|Data Mining ** Python ** Journal Paper"
 
 - id: bmc_paper_2021
   title: "Exploring the relationship between mobility and COVID− 19 infection rates for the second peak in the United States using phase-wise association."
@@ -73,7 +77,7 @@
     - ramesh
     - ziad
   awards:
-    - "Journal Paper"
+    - "Statistics|Data Mining ** Python ** Journal Paper"
 
 - id: icasert_2019
   title: "Comparison of Linear Displacement Measurements Between A Mems Accelerometer and HC‑SR04 Low‑Cost Ultrasonic Sensor"
@@ -91,7 +95,7 @@
     - salman
     - mohsan
   awards:
-    - "Conference Paper"
+    - "Robotics|Sensor ** C++|Python ** Conference Paper"
 
 
 # ----- Template

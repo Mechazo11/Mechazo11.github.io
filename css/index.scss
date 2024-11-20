@@ -8,16 +8,6 @@
     font-weight: 700;
 }
 
-// .portrait {
-//     // border-radius: 2%;
-//     // overflow: hidden;
-//     margin-left: auto; /* Push the portrait towards the left */
-//     margin-right: auto; /* Keeps it centered if space allows */
-//     max-width: 95%; /* Ensures it scales nicely */
-
-//     img { transform: scale(1.2); }
-// }
-
 .portrait {
     margin-left: -15%; /* Negative value helpe to center the image a bit more */
     margin-right: auto; /* Keeps some spacing on the right */
@@ -78,15 +68,29 @@
         }
     }
 
+    // .publication-image {
+    //     border-radius: 2%;
+    //     width: 100%; /* Enlarges the image */
+    //     max-width: 150px; /* Control the size without affecting layout */
+    //     height: auto; /* Adjusts height proportionally */
+    //     overflow: hidden;
+    //     font-size: 0;
+
+    //     img {
+    //         width: 100%;
+    //         height: auto; /* Ensures correct aspect ratio */
+    //     }
+    // }
+
     .publication-image {
-        border-radius: 2%;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        font-size: 0;
+        margin-left: -15%; /* Negative value helpe to center the image a bit more */
+        margin-right: auto; /* Keeps some spacing on the right */
+        margin-top: auto; /* Keeps some spacing on the right */
+        margin-bottom: auto; /* Keeps some spacing on the right */
+        max-width: 200%; /* Ensures it scales nicely */
 
         img {
-            width: 100%;
+            transform: scale(1.2); /* Keeps the current zoom effect */
         }
     }
 
