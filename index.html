@@ -1,285 +1,867 @@
----
-layout: null
----
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
+
+<!-- References -->
+<!-- https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/personal.html -->
+<!-- https://bulmatemplates.github.io/bulma-templates/templates/personal.html#portfolio -->
 
 <head>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <title>{{ site.name }}</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <!-- Google tag (gtag.js) for google analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PS63CZ2F86"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', '{{ site.google_analytics }}');
+    gtag('config', 'G-PS63CZ2F86');
   </script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="{{ '/css/fontawesome.all.min.css' | relative_url }}" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
-  <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
-  <link href="{{ '/css/index.css' | relative_url }}" rel="stylesheet">
+  <!-- general settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio of MizuhoAOKI</title>
+  <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/personal.css">
+  <script async type="text/javascript" src="../js/bulma.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script defer src="{{ '/js/fontawesome.all.min.js' | relative_url }}"></script>
-  <script src="{{ '/js/index.js' | relative_url }}"></script>
+  <!-- for modal -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/hero.css">
+  <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+  <style>
+  .columns:nth-child(2)
+  {margin-top: -10rem;}
+  </style>
+  
+  <!-- unique tag given by google search console -->
+  <meta name="google-site-verification" content="gq5j7CTEbR1B_o5BQwYdwrDK7aBt5rnKEYgqp4Lr770" />
 </head>
 
 <body>
-
-  <section class="hero">
-    <div class="hero-body container is-max-desktop">
-      <div class="columns is-vcentered">
-
-        <div class="column is-4">
-          <div class="portrait">
-            <img src="{{ '/images/portrait.jpg' | relative_url }}" />
-          </div>
-        </div>
-
-        <div class="column">
-          <h1 class="title">
-            <b>Hello, I'm {{ site.name }}</b>
-          </h1>
-          <div class="content has-text-justified">
-            {{ site.description | markdownify }}
-            <div class="buttons">
-              <!-- Opens a .pdf file -->
-              <a class="external-link button is-light" href="/assets/cv.pdf" target="_blank">
-                <span class="icon"><i class="fas fa-file"></i></span>
-                <span>CV</span>
-              </a>
-
-              <a class="external-link button is-light"
-                href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
-                <span class="icon"><i class="ai ai-google-scholar"></i></span>
-                <span>Scholar</span>
-              </a>
-
-              <a class="external-link button is-light" href="https://github.com/{{ site.github_username }}">
-                <span class="icon"><i class="fab fa-github"></i></span>
-                <span>Github</span>
-              </a>
-
-              <!-- <a class="external-link button is-light" href="https://twitter.com/{{ site.twitter_username }}">
-                <span class="icon"><i class="fab fa-twitter"></i></span>
-                <span>Twitter</span>
-              </a> -->
-            </div>
-
-          </div>
-        </div>
+  <!-- Navigation bar -->
+  <nav class="navbar is-link is-fixed-top">
+    <div class="navbar-brand">
+      <div class="navbar-burger burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </div>
+    </div>
+
+    <div id="navMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#about">
+          <span class="icon">
+            <i class="fas fa-info"></i>
+          </span>
+          <span>About</span>
+        </a>
+        <a class="navbar-item" href="#projects">
+          <span class="icon">
+            <i class="fas fa-th-list"></i>
+          </span>
+          <span>Projects</span>
+        </a>
+        <a class="navbar-item" href="#achievements">
+          <span class="icon">
+            <i class="fas fa-crown"></i>
+          </span>
+          <span>Achievements</span>
+        </a>
+        <a class="navbar-item" href="#contact">
+          <span class="icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="hero is-link is-large">
+    <div class="columns is-centered">
+    <div class="column is-8">
+    <div class="columns is-vcentered">
+    <!-- left side -->
+    <div class="column is-7">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-1">
+          Mizuho AOKI
+        </h1>
+        <h2 class="subtitle is-3">
+          Ph.D. Student at Nagoya University
+        </h2>
+      </div>
+    </div>
+    </div>
+    <!-- right side -->
+    <div class="column is-5">
+      <!-- Profile picture -->
+      <div class="card">
+          <div class="card-image">
+              <figure class="image">
+              <img src="./media/self_taken_photo.jpg" alt="self_taken_photo">
+              </figure>
+          </div>
+          </div>
+      </div>
+    </div>
+    </div>
     </div>
   </section>
 
-  <!-- News. -->
-  <div class="hr">
+  <!-- About -->
+  <section class="section" id="about">
     <div class="container">
-      <hr>
-    </div>
-  </div>
+      <div class="section-heading">
+        <h3 class="title is-2">About Me</h3>
+        <h4 class="subtitle is-5">Ph.D. student at Nagoya University, doing research on motion planning and control in the fields of robotics and autonomous driving. </h4>
+      </div>
+      <br>
 
-  <section class="section">
-    <div class="container is-max-desktop">
+    <!-- Job hunting banner -->
+    <section class="hero is-danger">
+      <div class="hero-body">
+        <p class="subtitle is-4">Looking for a next research position (2025/10 ~ or 2026/04 ~) after finishing my Ph.D.</p>
+      </div>
+    </section>
 
-      <!--<h2 class="title is-3">News</h2>
-      <div class="content">
-        <ul>
-          {% for news in site.data.news %}
-          <li>
-            <b>{{ news.date }}</b>: {{ news.description | markdownify | remove: '<p>' | remove: '</p>' }}
-          </li>
-          {% endfor %}
-        </ul>
-      </div>-->
-      
-      <!-- Projects Section -->
-      <h2 class="title is-3">Projects</h2>
+    <div class="columns has-same-height">
+      <div class="column">
+        <!-- Profile -->
+        <div class="card">
+          <div class="card-content">
+            <h3 class="title is-4">Profile</h3>
 
-      {% for project in site.data.projects %}
-      <div class="publication-block columns">
+            <div class="content">
+              <table class="table-profile">
+                <tr>
+                  <th colspan="1"></th>
+                  <th colspan="2"></th>
+                </tr>
+                <tr>
+                  <td>Curriculum Vitae</td>
+                  <td>
+                    <span class="icon">
+                      <i class="fa-regular fa-file"></i>
+                    </span>
+                    <a href="./media/cv_mizuhoaoki.pdf" target="_blank">CV.pdf</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Nationality</td>
+                  <td>Japan</td>
+                </tr>
+                <tr>
+                  <td>Affiliation</td>
+                  <td><a href="https://en.nagoya-u.ac.jp/">Nagoya University</a></td>
+                </tr>
+                <tr>
+                  <td>Department</td>
+                  <td>Mechanical Systems Engineering</td>
+                </tr>
+                <tr>
+                  <td>Laboratory</td>
+                  <td class="is-vcentered">
+                    <a href="https://www.suzlab.mae.nagoya-u.ac.jp/en/">Suzuki Tatsuya Lab</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Interests</td>
+                  <td>
+                    <ul>
+                    <li>Autonomous Driving</li>
+                    <li>Vehicle Model</li>
+                    <li>Motion Planning</li>
+                    <li>Control Theory</li>
+                    <li>Model Predictive Control</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
 
-        <div class="column is-2">
-          <div class="publication-image {% if project.image_mouseover %}publication-mousecell{% endif %}">
-            {% if project.image_mouseover contains "mp4" %}
-            <video autoplay preload playsinline loop muted width="100%">
-              <source src="{{ '/images/' | relative_url }}{{ project.image_mouseover }}" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            {% endif %}
-            <img alt="{{ project.title }}" src="{{ '/images/' | relative_url }}{{ project.image }}" />
           </div>
         </div>
+      </div>
+    
+      <div class="column">
+        <!-- Skills -->
+        <div class="card">
+          <div class="card-content skills-content">
+            <h3 class="title is-4">Skills</h3>
+            <div class="content">
 
-        <div class="column">
-          <div class="content">
-            <h3 class="publication-title"><a href="{{ project.project_page }}">{{ project.title }}</a></h3>
-            <div class="publication-authors">
-              {% for author_id in project.authors %}
-              {% assign author = site.data.authors[author_id] %}
-              <span class="author-block {% if author.is_me %}author-me{% endif %}">
-                {% if author.is_me %}
-                {{ author.first_name }} {{ author.middle_name }} {{ author.last_name }}{% if forloop.last == false %},{% endif %}
-                {% else %}
-                <a href="{{ author.website }}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name }}</a>{% if forloop.last == false %},{% endif %}
-                {% endif %}
-              </span>
-              {% endfor %}
-            </div>
-            <div class="publication-venue">
-              <span>{{ project.venue }}</span>
-            </div>
-            <p class="publication-description">{{ project.description }}</p>
-            <!-- Project Links -->
-            <div class="publication-links buttons field has-addons">
-              <!-- <a class="external-link button is-small is-ghost" href="{{ project.project_page }}">
-                <span class="icon"><i class="fas fa-globe"></i></span>
-                <span>Project Page</span>
-              </a> -->
-              {% if publication.project_page %}
-              <a class="external-link button is-small is-ghost" href="{{ publication.project_page }}">
-                <span class="icon"><i class="fas fa-globe-asia"></i></span>
-                <span>Project Page</span>
-              </a>
-              {% endif %}
-              <!-- Github -->
-              {% if project.github %}
-              <a class="external-link button is-small is-ghost" href="https://github.com/{{ project.github }}">
-                <span class="icon"><i class="fab fa-github"></i></span>
-                <span>Code</span>
-              </a>
-              {% endif %}
-              <!-- Add more links if necessary -->
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Python</strong>
+                      <br>
+                      <progress class="progress is-link" value="90" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>C++/C</strong>
+                      <br>
+                      <progress class="progress is-link" value="80" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>ROS</strong>
+                      <br>
+                      <progress class="progress is-link" value="80" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Unity</strong>
+                      <br>
+                      <progress class="progress is-link" value="70" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Matlab</strong>
+                      <br>
+                      <progress class="progress is-link" value="60" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
             </div>
           </div>
         </div>
       </div>
-      {% endfor %}
-      <!-- End of Projects Section -->
-
-      <h2 class="title is-3">Publications & Patents</h2>
-
-      {% for publication in site.data.publications %}
-      <div class="publication-block columns">
-
-        <div class="column is-2">
-          <div class="publication-image {% if publication.image_mouseover %}publication-mousecell{% endif %}">
-            {% if publication.image_mouseover contains "mp4" %}
-            <video autoplay preload playsinline class="" height="100%" loop muted width="100%">
-              <source src="./images/{{ publication.image_mouseover }}" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            {% endif %}
-            <img alt="{{ publication.title }}" src="./images/{{ publication.image }}" />
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="content">
-            <h3 class="publication-title"><a href="{{ publication.url }}">{{ publication.title }}</a></h3>
-            <div class="publication-authors">
-              {% for author_id in publication.authors %}
-              {% assign author = site.data.authors[author_id] %}
-              <span class="author-block {% if author.is_me %}author-me{% endif %}">
-                {% if author.is_me %}
-                {{ author.first_name }} {{author.middle_name}} {{ author.last_name }}{% if forloop.last == false %},{%
-                endif %}
-                {% else %}
-                <a href="{{ author.website }}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name
-                  }}</a>{% if forloop.last == false %},{% endif %}
-                {% endif %}
-              </span>
-              {% endfor %}
-            </div>
-            <div class="publication-venue">
-              <span>{{ publication.venue }}</span>
-              {% for award in publication.awards %}
-                <span class="publication-venue-emph">{{ award }}<span>
-              {% endfor %}
-            </div>
-            <p class="publication-description">{{ publication.description }}</p>
-            <!-- Publication Project Page. -->
-            <div class="publication-links buttons field has-addons">
-              {% if publication.project_page and publication.project_page != '' %}
-              <a class="external-link button is-small is-ghost" href="{{ publication.project_page }}">
-                <span class="icon"><i class="fas fa-globe-asia"></i></span>
-                <span>Project Page</span>
-              </a>
-              {% endif %}
-              <!-- <a class="external-link button is-small is-ghost" href="https://arxiv.org/pdf/{{ publication.arxiv }}.pdf">
-                <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                <span>PDF</span>
-              </a>
-              <a class="external-link button is-small is-ghost" href="https://arxiv.org/abs/{{ publication.arxiv }}">
-                <span class="icon"><i class="ai ai-arxiv"></i></span>
-                <span>arXiv</span>
-              </a> -->
-              <!-- Publication URL -->
-              {% if publication.url %}
-              <a class="external-link button is-small is-ghost" href="{{ publication.url }}">
-                <span class="icon"><i class="fas fa-link"></i></span>
-                <span>Link</span>
-              </a>
-              {% elsif publication.arxiv %}
-              <a class="external-link button is-small is-ghost" href="https://arxiv.org/pdf/{{ publication.arxiv }}.pdf">
-                <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                <span>PDF</span>
-              </a>
-              <a class="external-link button is-small is-ghost" href="https://arxiv.org/abs/{{ publication.arxiv }}">
-                <span class="icon"><i class="ai ai-arxiv"></i></span>
-                <span>arXiv</span>
-              </a>
-              {% endif %}
-              {% if publication.github %}
-              <a class="external-link button is-small is-ghost" href="https://github.com/{{ publication.github }}">
-                <span class="icon"><i class="fa fab fa-github"></i></span>
-                <span>Code</span>
-              </a>
-              {% endif %}
-            </div>
-            <!--/ Publication Links. -->
-          </div>
-        </div>
-      </div>
-      {% endfor %}
     </div>
   </section>
 
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-heading">
+        <h3 class="title is-2">Projects</h3>
+      </div>
+      <br>
+      <div class="container portfolio-container">
+        <div class="columns is-multiline">
+
+          <!-- IROS2024 -->
+          <div class="column is-4">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span class="tag is-success mr-2">Paper</span>
+                  <span><a class="has-text-success" href="https://iros2024-abudhabi.org/" target="_blank">[IROS2024]</a> MPPI Controller for Navigation of 4WIDS Vehicle (or Swerve Drive Robot)</span>
+                  <span class="is-pulled-right">
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <video autoplay loop muted="yes" playsinline>
+                  <source src="./media/demo_4wids_iros2024.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <footer class="card-footer">
+                <a class="card-footer-item is-link modal-button" href="./projects/iros2024.html" target="_blank">
+                  <span class="icon mr-1">
+                    <i class="fa-solid fa-circle-info"></i>
+                  </span>  
+                  Project Page
+                </a>
+                <a class="card-footer-item is-link modal-button" href="https://github.com/MizuhoAOKI/mppi_swerve_drive_ros" target="_blank">
+                  <span class="icon">
+                    <i class="fa-brands fa-github"></i>
+                  </span>
+                  Github
+                </a>
+              </footer>
+            </div>
+          </div>
+
+          <!-- F1TENTH -->
+          <div class="column is-4">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span class="tag is-info mr-2">Prize</span>
+                  <span>Joined F1TENTH Autonomous Racing Competition</span>
+                  <span class="is-pulled-right">
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <video autoplay loop muted="yes" playsinline>
+                  <source src="./media/f1tenth_highlight.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <footer class="card-footer">
+                <a class="card-footer-item is-link modal-button" href="https://f1tenth.org/" target="_blank">
+                  <span class="icon mr-1">
+                    <i class="fa-solid fa-circle-info"></i>
+                  </span>  
+                  About F1TENTH
+                </a>
+              </footer>
+            </div>
+          </div>
+
+          <!-- [OSS] python_simple_mppi -->
+          <div class="column is-4">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span class="tag is-primary mr-2">OSS</span>
+                  <span>python_simple_mppi</span>
+                  <span class="is-pulled-right">
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <video autoplay loop muted="yes" playsinline>
+                  <source src="./media/python_simple_mppi.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <footer class="card-footer">
+                  <a class="card-footer-item is-link modal-button" href="https://github.com/MizuhoAOKI/python_simple_mppi" target="_blank">
+                    <span class="icon">
+                      <i class="fa-brands fa-github"></i>
+                    </span>
+                    Github
+                  </a>
+              </footer>
+            </div>
+          </div>
+
+          <!-- AI Challenge 1st-->
+          <div class="column is-4">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span class="tag is-info mr-2">Prize</span>
+                  <span>Won 1st prize in Japan Automotive AI Challenge 2022 (Simulation)</span>
+                  <span class="is-pulled-right">
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <video autoplay loop muted="yes" playsinline>
+                  <source src="./media/aichallenge2022sim_for_thumbnail.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <footer class="card-footer">
+                <a class="card-footer-item is-link modal-button" href="https://youtu.be/N4oN3cmH9D8" target="_blank">
+                  <span class="icon mr-1">
+                    <i class="fa-brands fa-youtube"></i>
+                  </span>
+                  Youtube
+                </a>
+              </footer>
+            </div>
+          </div>
+
+          <!-- [OSS] path_tracking_catalog -->
+          <div class="column is-4">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span class="tag is-primary mr-2">OSS</span>
+                  <span>path_tracking_catalog</span>
+                  <span class="is-pulled-right">
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <video autoplay loop muted="yes" playsinline>
+                  <source src="./media/path_tracking_catalog_for_thumbnail.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <footer class="card-footer">
+                  <a class="card-footer-item is-link modal-button" href="https://github.com/MizuhoAOKI/path_tracking_catalog" target="_blank">
+                    <span class="icon">
+                      <i class="fa-brands fa-github"></i>
+                    </span>
+                    Github
+                  </a>
+              </footer>
+            </div>
+          </div>
+
+          <!-- Smart City Expo -->
+          <div class="column is-4">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Exhibited a booth at Smart City Expo 2022</span>
+                  <span class="is-pulled-right">
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <video autoplay loop muted="yes" playsinline>
+                  <source src="./media/multi_agent_demo_for_thumbnail.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <footer class="card-footer">
+                <a class="card-footer-item is-link  modal-button" data-target="modal-card-sce2022">
+                  <span class="icon mr-1">
+                    <i class="fa-solid fa-circle-info"></i>
+                  </span>
+                  More
+                </a>
+              </footer>
+            </div>
+          </div>
+
+          <!-- AI Challenge 3rd-->
+          <!-- <div class="column is-4">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span class="tag is-info mr-2">Prize</span>
+                  <span>Won 3rd prize in Japan Automotive AI Challenge 2022 (Integration)</span>
+                  <span class="is-pulled-right">
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image is-4by3">
+                  <img src="./media/aichallenge2022_integration.png" alt="japanese_automotive_ai_challenge_2022_integration">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a class="card-footer-item is-link  modal-button" data-target="modal-card-aichallenge2022int">
+                  <span class="icon mr-1">
+                    <i class="fa-solid fa-circle-info"></i>
+                  </span>
+                  More
+                </a>
+              </footer>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Achievements -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-heading">
+        <h3 class="title is-2">Achievements</h3>
+      </div>
+      <br>
+
+      <!-- SII2025 -->
+      <div class="card block">
+        <div class="card-content">
+          <span class="has-text-weight-bold mr-2">2025/01</span>
+          <span class="tag is-success">Proceeding</span>
+          <div class="mt-2 mb-2">
+            Kentaro Sugiura, Hiroyuki Okuda, <span class="has-text-weight-semibold">Mizuho Aoki</span>, Kazuma Uchida, Tatsuya Suzuki, Inducibility Analysis of Pedestrian's Interactive Behavior, IEEE/SICE International Symposium on System Integration 2025 (SII2025), Germany, 2024 (accepted)
+          </div>
+        </div>
+      </div>
+
+      <!-- IROS2024 -->
+      <div class="card block">
+        <div class="card-content">
+          <span class="has-text-weight-bold mr-2">2024/10</span>
+          <span class="tag is-success">Proceeding</span>
+          <div class="mt-2 mb-2">
+            <span class="has-text-weight-semibold">Mizuho Aoki</span> , Kohei Honda, Hiroyuki Okuda , and Tatsuya Suzuki, Switching Sampling Space of Model Predictive Path-Integral Controller to Balance Efficiency and Safety in 4WIDS Vehicle Navigation, IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2024
+          </div>
+          <a class="button is-outlined is-small" href="./projects/iros2024.html" target="_blank">Website</a>
+          <a class="button is-outlined is-small" href="./media/papers/IROS2024_paper_mizuhoaoki.pdf" target="_blank">PDF</a>
+          <a class="button is-outlined is-small" href="https://arxiv.org/abs/2409.08648" target="_blank">arXiv</a>
+          <a class="button is-outlined is-small" href="./projects/iros2024_poster.pdf" target="_blank">Poster</a>
+          <a class="button is-outlined is-small" href="https://github.com/MizuhoAOKI/mppi_swerve_drive_ros" target="_blank">Code</a>
+          <a class="button is-outlined is-small" href="https://youtu.be/c0psufuvrzM?feature=shared" target="_blank">Video</a>
+          <!-- <a class="button is-outlined is-small" href="" target="_blank">IEEE Xplore</a> -->
+        </div>
+      </div>
+
+      <!--  Grant: DC2 -->
+      <div class="card block">
+        <header class="card-content">
+          <span class="has-text-weight-bold mr-2">2024/04/01 - 2026/03/31</span>
+          <span class="tag is-danger">Grant</span>
+          <div class="mt-2">
+            Research Fellowship for Young Scientists <span class="has-text-weight-semibold">DC2</span> from Japan Society for the Promotion of Science (JSPS) 
+          </div>
+        </header>
+      </div>
+
+      <!-- ICRA2024 -->
+      <div class="card block">
+        <div class="card-content">
+          <span class="has-text-weight-bold mr-2">2024/05</span>
+          <span class="tag is-success">Proceeding</span>
+          <div class="mt-2 mb-2">
+            Kohei Honda, Naoki Akai, Kosuke Suzuki, <span class="has-text-weight-semibold">Mizuho Aoki</span> , Hirotaka Hosogaya , Hiroyuki Okuda , and Tatsuya Suzuki, Stein Variational Guided Model Predictive Path Integral Control: Proposal and Experiments with Fast Maneuvering Vehicles, IEEE International Conference on Robotics and Automation (ICRA), 2024
+          </div>
+          <a class="button is-outlined is-small" href="https://arxiv.org/abs/2309.11040" target="_blank">PDF</a>
+          <a class="button is-outlined is-small" href="https://github.com/kohonda/proj-svg_mppi" target="_blank">Code</a>
+          <a class="button is-outlined is-small" href="https://youtu.be/ML_aOYQIDL0?feature=shared" target="_blank">Video</a>
+          <!-- <a class="button is-outlined is-small" href="" target="_blank">IEEE Xplore</a> -->
+        </div>
+      </div>
+
+      <!-- IEEE Young Researcher Award -->
+      <div class="card block">
+        <header class="card-content">
+          <span class="has-text-weight-bold mr-2">2023/12/23</span>
+          <span class="tag is-info">Award</span>
+          <div class="mt-2">
+          Received the IEEE ITS Society Nagoya Chapter Young Researcher Award 2023 
+          </div>
+        </header>
+      </div>
+
+      <!-- ICINCO2023 -->
+      <div class="card block">
+        <div class="card-content">
+          <span class="has-text-weight-bold mr-2">2023/11/14</span>
+          <span class="tag is-success">Proceeding</span>
+          <div class="mt-2 mb-2">
+            Kentaro Sugiura, <span class="has-text-weight-semibold">Mizuho Aoki</span>, Hiroyuki Okuda, Tatsuya Suzuki, "Evaluation of Controllability of Interaction Between Pedestrian and Autonomous Mobile Robot in Shared Mobility Space", 20th International Conference on Informatics in Control, Automation And Robotics (ICINCO), Italy, 2023.
+          </div>
+        </div>
+      </div>
+
+      <!-- SICE AC 2023 -->
+      <div class="card block">
+        <div class="card-content">
+          <span class="has-text-weight-bold mr-2">2023/09/06</span>
+          <span class="tag is-success">Proceeding</span>
+          <div class="mt-2 mb-2">
+            Koki Hoshino , Kohei Honda , <span class="has-text-weight-semibold">Mizuho Aoki</span> , Hiroyuki Okuda, and Tatsuya Suzuki, "Actual-Vehicle Verification of Automatic Parking in Narrow Spaces Considering Precise Collision Avoidance Constraints for Rectangular Objects", SICE Annual Conference, Japan, 2023.
+          </div>
+          <a class="button is-outlined is-small" href="https://ieeexplore.ieee.org/document/10354159/" target="_blank">IEEE Xplore</a>
+        </div>
+      </div>
+
+      <!-- F1TENTH in IV 2023 and ICRA2023 -->
+      <div class="card block">
+        <header class="card-content">
+          <span class="has-text-weight-bold mr-2">2023/06/07</span>
+          <span class="tag is-info">Prize</span>
+          <div class="mt-2">
+          Our team <span class="has-text-weight-semibold">Suzlab</span> got <span class="has-text-weight-bold">3rd prize</span> and <span class="has-text-weight-bold">4th place</span> in the F1TENTH autonomous racing competitions at IV 2023 and ICRA 2023
+          </div>
+        </header>
+      </div>
+
+      <!--  Grant: Fellowship -->
+      <div class="card block">
+        <header class="card-content">
+          <span class="has-text-weight-bold mr-2">2023/04/01 - 2024/03/31</span>
+          <span class="tag is-danger">Grant</span>
+          <div class="mt-2">
+            Nagoya University Interdisciplinary Frontier Fellowship
+          </div>
+        </header>
+      </div>
+
+      <!-- SICE Student Award -->
+      <div class="card block">
+        <header class="card-content">
+          <span class="has-text-weight-bold mr-2">2023/03/31</span>
+          <span class="tag is-info">Award</span>
+          <div class="mt-2">
+          Received an Excellent Student Award from the Society of Instrument and Control Engineers (SICE)
+          </div>
+        </header>
+      </div>
+
+      <!-- JSAE Graduate School Research Award -->
+      <div class="card block">
+        <header class="card-content">
+          <span class="has-text-weight-bold mr-2">2023/03/07</span>
+          <span class="tag is-info">Award</span>
+          <div class="mt-2">
+          Received a Graduate School Research Award from the Society of Automotive Engineers of Japan (JSAE)
+          </div>
+        </header>
+      </div>
+
+      <!-- 1st prize of AI Challenge -->
+      <div class="card block">
+        <header class="card-content">
+          <span class="has-text-weight-bold mr-2">2023/03/06</span>
+          <span class="tag is-info">Prize</span>
+          <div class="mt-2">
+          Won <span class="has-text-weight-bold">1st prize</span> in Japan Automotive AI Challenge 2022 (simulation)
+          </div>
+        </header>
+      </div>
+
+      <!-- ITSC2022 -->
+      <div class="card block">
+        <div class="card-content">
+          <span class="has-text-weight-bold mr-2">2022/09/18</span>
+          <span class="tag is-success">Proceeding</span>
+          <div class="mt-2 mb-2">
+            <span class="has-text-weight-semibold">Mizuho Aoki</span>, Kohei Honda, Hiroyuki Okuda, Tatsuya Suzuki, Akira Ito, Daisuke Nagasaka, "Obstacle Avoidance Control Based on Nonlinear MPC for All Wheel Driven In-Wheel EV in Steering Failure", 2022 IEEE 25th International Conference on Intelligent Transportation Systems (ITSC), pp. 2863-2868, regular paper, Macau, China, Oct. 8-12, 2022.
+          </div>
+          <a class="button is-outlined is-small" href="./media/papers/ITSC2022_paper_mizuhoaoki.pdf" target="_blank">PDF</a>
+          <!-- here is a rule to upload accepted paper on IEEE Xplore : https://conferences.ieeeauthorcenter.ieee.org/author-ethics/guidelines-and-policies/post-publication-policies/ -->
+          <a class="button is-outlined is-small" href="https://ieeexplore.ieee.org/document/9922126" target="_blank">IEEE Xplore</a>
+        </div>
+      </div>
+
+      <!-- 3rd prize of AI Challenge -->
+      <div class="card block">
+        <header class="card-content">
+          <span class="has-text-weight-bold mr-2">2022/06/26</span>
+          <span class="tag is-info">Prize</span>
+          <div class="mt-2">
+          Won <span class="has-text-weight-semibold">3rd prize</span> in Japan Automotive AI Challenge 2022 (integration)
+          </div>
+        </header>
+      </div>
+
+      <!-- jigikai journal paper-->
+      <div class="card block">
+        <div class="card-content">
+          <span class="has-text-weight-bold mr-2">2022/05/25</span>
+          <span class="tag is-success">Journal</span>
+          <div class="mt-2 mb-2">
+            <span class="has-text-weight-semibold">Mizuho Aoki</span>, Kohei Honda, Hiroyuki Okuda, Tatsuya Suzuki, "Evaluation of Vehicle Prediction Models for Model Predictive Path-Tracking Control", Transaction of Society of Automotive Engineers of Japan, 2022, Vol.53 No.3, p. 687-692, 2022/05/25, Online ISSN 1883-0811, Print ISSN 0287-8321, https://doi.org/10.11351/jsaeronbun.53.687
+          </div>
+          <a class="button is-outlined is-small" href="https://www.jstage.jst.go.jp/article/jsaeronbun/53/3/53_20224327/_article/-char/ja/" target="_blank">PDF</a>
+        </div>
+      </div>
+
+      <!-- IV2021 -->
+      <div class="card block">
+        <div class="card-content">
+          <span class="has-text-weight-bold mr-2">2021/07/11</span>
+          <span class="tag is-success">Proceeding</span>
+          <div class="mt-2 mb-2">
+            <span class="has-text-weight-semibold">Mizuho Aoki</span>, Kohei Honda, Hiroyuki Okuda, and Tatsuya Suzuki, "Comparative Study of Prediction Models for Model Predictive Path-Tracking Control in Wide Driving Speed Range", 2021 IEEE Intelligent Vehicles Symposium (IV), pp. 1261-1267, Japan, 2021.
+          </div>
+          <a class="button is-outlined is-small" href="./media/papers/IV2021_paper_mizuhoaoki.pdf" target="_blank">PDF</a>
+          <!-- here is a rule to upload accepted paper on IEEE Xplore : https://conferences.ieeeauthorcenter.ieee.org/author-ethics/guidelines-and-policies/post-publication-policies/ -->
+          <a class="button is-outlined is-small" href="https://ieeexplore.ieee.org/document/9575868" target="_blank">IEEE Xplore</a>
+        </div>
+      </div>
+
+      <!--  Grant: TMI -->
+      <div class="card block">
+        <header class="card-content">
+          <span class="has-text-weight-bold mr-2">2021/04/01 - 2026/03/31</span>
+          <span class="tag is-danger">Grant</span>
+          <div class="mt-2 mb-2">
+            Nagoya University TMI WISE Program Scholarship
+          </div>
+          <a class="button is-outlined is-small" href="https://tmi-nu.github.io/en/" target="_blank">About TMI</a>
+        </header>
+      </div>
+
+      <!--  Scholarship: Rinnai -->
+      <div class="card block">
+        <header class="card-content">
+          <span class="has-text-weight-bold mr-2">2021/04/01 - 2023/03/31</span>
+          <span class="tag is-danger">Scholarship</span>
+          <div class="mt-2">
+            Rinnai Scholarship for Graduate Students
+          </div>
+        </header>
+      </div>
+
+      <!-- President's Award -->
+      <div class="card block">
+        <header class="card-content">
+          <span class="has-text-weight-bold mr-2">2021/03/31</span>
+          <span class="tag is-info">Award</span>
+          <div class="mt-2">
+          Received the 2022 President's Award of Nagoya University
+          </div>
+        </header>
+      </div>
+
+      <!-- Robotics Society Award -->
+      <div class="card block">
+        <header class="card-content">
+          <span class="has-text-weight-bold mr-2">2021/03/31</span>
+          <span class="tag is-info">Award</span>
+          <div class="mt-2">
+          Received an Excellent Student Award from the Robotics Society of Japan
+          </div>
+        </header>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <h3 class="title is-2">Contact</h3>
+      </div>
+      <br>
+
+      <div class="columns">
+        <div class="column is-6 is-offset-3">
+          <div class="box">
+            <div>
+            <span class="icon">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <a href="mailto:mizuhoaoki1998@gmail.com" target="_blank">mizuhoaoki1998@gmail.com</a>
+            </div>
+            <div>
+            <span class="icon">
+              <i class="fa-brands fa-twitter"></i>
+            </span>
+            <a href="https://twitter.com/mizuhoaoki1998" target="_blank">@mizuhoaoki1998</a>
+            </div>
+            <div>
+              <span class="icon">
+                <i class="fa-brands fa-linkedin"></i>
+              </span>
+              <a href="https://www.linkedin.com/in/mizuho-aoki-74a369251/" target="_blank">in/mizuho-aoki-74a369251</a>
+              </div>
+              <div>
+                <span class="icon">
+                  <i class="fa-brands fa-github"></i>
+                </span>
+                <a href="https://github.com/MizuhoAOKI" target="_blank">MizuhoAOKI</a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer --> <!-- WIP -->
   <footer class="footer">
-    <div class="container">
-      <div class="content footer-links has-text-centered">
-        <a href="mailto:{{ site.email }}">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a class="external-link" href="https://github.com/{{ site.github_username }}">
-          <i class="fab fa-github"></i>
-        </a>
-        <a class="external-link" href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
-          <i class="ai ai-google-scholar"></i>
-        </a>
-      </div>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-8">
-          <div class="content">
-            <p>
-              Feel free to <a href="https://github.com/keunhong/keunhong.github.io">borrow this template</a>.
-            </p>
-          </div>
-        </div>
-      </div>
+    <div class="section-heading">
+      <p>
+        Copyright © <strong>2023</strong> Mizuho Aoki. All Rights Reserved.
+      </p>
+      <p>
+        This site uses Google Analytics, a service provided by Google, to analyze and improve the site.
+        This service uses cookies to collect traffic data. Traffic data is collected anonymously and does not personally identify you.
+      </p>
     </div>
   </footer>
 
-</body>
+    <!--  ===============
+    Write Hidden Modal Contents Below.
+    ===============  -->
 
+    <!-- start modal-card-sce2022 -->
+    <div id="modal-card-sce2022" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <!-- content -->
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="./media/sce2022_multi_agent_demo.jpg" alt="sce2022">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              Official Website : <a href="https://www.smartcityexpo.com/" target="_blank">https://www.smartcityexpo.com/</a>
+              <br>
+            </div>
+          </div>
+        </div>
+        <!-- end content -->
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <!-- end modal-card-sce2022 -->
+
+    <!-- start modal-card-aichallenge2022int -->
+    <div id="modal-card-aichallenge2022int" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <!-- content -->
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="./media/aichallenge2022_integration.png" alt="aichallenge2022_integration">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              Video recording of the competition : <a href="https://youtu.be/DUOCrdhPypU?t=232" target="_blank">https://youtu.be/DUOCrdhPypU?t=232</a>
+              <br>
+            </div>
+          </div>
+        </div>
+        <!-- end content -->
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <!-- end modal-card-aichallenge2022int -->
+
+    <!-- Scripts Needed For Modal -->
+    <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>  
+    <script src="../js/wild.js"></script>
+    <script>
+    // [Modal]
+    document.addEventListener("DOMContentLoaded", function() {
+    //The first argument are the elements to which the plugin shall be initialized
+    //The second argument has to be at least a empty object or a object with your desired options
+    OverlayScrollbars(document.querySelectorAll("body"), { });
+    });
+
+    // [NavBar]
+    $(document).ready(function() {
+    // Check for click events on the navbar burger icon
+    $(".navbar-burger").click(function() {
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
+    });
+    });
+    </script>
+
+
+</body>
 </html>
