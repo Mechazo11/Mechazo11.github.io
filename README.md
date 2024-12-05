@@ -3,7 +3,8 @@
 This portfolio webpage is based on Mizuho Aoki's [portoflio website](https://mizuhoaoki.github.io/).
 
 - Feel free to borrow this template.
-- Make sure to update all relevant fields in `_config.yml`.
+- Make sure to update all relevant fields in `index.html` file.
+- To make changes to the layout i.e. change banner style, color, font size change the ```bulma.css``` file.
 
 - To test development locally, do the following
 
@@ -23,4 +24,5 @@ bundle exec jekyll serve
 
 - [x] Setup initial project and test with a local run.
 - [x] Change name, blue border background, use portfolio webpage and enlarge image
-- [ ] Put a short introduction
+- [x] Clean up About Me section
+- [ ] Add relevant skills and finalize the About me section
