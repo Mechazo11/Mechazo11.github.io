@@ -22,5 +22,5 @@ bundle exec jekyll serve
 ## TODO
 
 - [x] Setup initial project and test with a local run.
-- [ ] Change name, blue border background, use portfolio webpage and enlarge image
+- [x] Change name, blue border background, use portfolio webpage and enlarge image
 - [ ] Put a short introduction

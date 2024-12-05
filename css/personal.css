@@ -1,3 +1,4 @@
-body {
-    background-color: #F5F5F5; /* Replace with desired color */
-}
+.hero.is-danger {
+    background-color: #31050a;
+    color: #fff;
+  }
