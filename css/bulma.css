@@ -3210,11 +3210,13 @@ a.tag:hover {
   font-size: 0.75rem;
 }
 
+
 .subtitle {
   color: #4a4a4a;
   font-size: 1.25rem;
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 1.15;
+  margin-bottom: 0.25rem; /* Reduce bottom margin */
 }
 
 .subtitle strong {
