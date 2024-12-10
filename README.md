@@ -26,3 +26,5 @@ bundle exec jekyll serve
 - [x] Change name, blue border background, use portfolio webpage and enlarge image
 - [x] Clean up About Me section
 - [ ] Add relevant skills and finalize the About me section
+- [ ] Modify project to add my own projects and publications
+- [ ] Remove assets which are not mine

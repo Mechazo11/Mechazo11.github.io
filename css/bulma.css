@@ -2194,10 +2194,16 @@ div.icon-text {
   display: flex;
 }
 
+/* Controls size of the image */
 .image {
   display: block;
   position: relative;
 }
+
+/* .image {
+  width: 400px;
+  margin: auto;  
+} */
 
 .image img {
   display: block;
