@@ -25,6 +25,5 @@ bundle exec jekyll serve
 - [x] Setup initial project and test with a local run.
 - [x] Change name, blue border background, use portfolio webpage and enlarge image
 - [x] Clean up About Me section
-- [ ] Add relevant skills and finalize the About me section
-- [ ] Modify project to add my own projects and publications
-- [ ] Remove assets which are not mine
+- [x] Add relevant skills and finalize the About me section
+- [ ] If time permits, open a new repo for master's project, upgrade to YOLOv5_version7 and generate a working video for one of the sequence
