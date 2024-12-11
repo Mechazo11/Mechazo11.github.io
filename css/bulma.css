@@ -3008,8 +3008,9 @@ div.icon-text {
   color: #fff;
 }
 
+/* deep blue */
 .tag:not(body).is-primary {
-  background-color: #00d1b2;
+  background-color: #0000ff;
   color: #fff;
 }
 
@@ -3038,10 +3039,25 @@ div.icon-text {
   color: #296fa8;
 }
 
+/* .tag:not(body).is-success {
+  background-color: #438622;
+  color: #fff;
+  padding: 0.5em 0.5em;
+  line-height: 1.0;
+} */
+
+/* Center adjusted, multiline tag */
 .tag:not(body).is-success {
   background-color: #438622;
   color: #fff;
+  padding: 0.5em 0.5em;
+  line-height: 1.0;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Ensure multiline text aligns */
 }
+
 
 .tag:not(body).is-success.is-light {
   background-color: #effaf5;
