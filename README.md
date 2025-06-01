@@ -27,3 +27,4 @@ bundle exec jekyll serve
 - [x] Clean up About Me section
 - [x] Add relevant skills and finalize the About me section
 - [ ] If time permits, open a new repo for master's project, upgrade to YOLOv5_version7 and generate a working video for one of the sequence
+- [ ] Add demo videos from my time at Kaliber Labs
